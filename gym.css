@@ -1,0 +1,213 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+}
+
+#nav1::before{
+    content:" ";
+    background-color: rgb(94, 178, 230);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.navbar ul {
+  display: flex;
+  margin: 25px 30px;
+}
+
+.navbar ul li{
+    list-style: none;
+    font-size: 22px;
+}
+
+.navbar ul li a{
+    display: flex;
+    padding: 5px 30px;
+    text-decoration: none;
+    border-radius: 18px;
+    color: #fff;
+}
+.navbar ul li a:hover{
+    background-color: black;
+    color: #fff;
+}
+#logo img{
+    border-radius: 50%;
+    height: 70px;
+    padding: 4px 11px;
+}
+
+#home{
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 70px 200px;
+}
+#home p{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(36, 237, 207);
+    display: flex;
+    margin: 8px 12px;
+    align-items: center;
+    align-content: center;
+    /* border: 2px solid black; */
+    width: 482px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('home.jpg')no-repeat center center/cover;
+    height: 400px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    /* opacity: 0.7; */
+}
+/* #home p:hover{
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 18px;
+
+} */
+#main{
+    /* position: relative; */
+    align-items: center;
+    align-content: center;
+}
+/* #main{
+        animation-name: main;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-direction: normal;
+}
+
+@keyframes main {
+    0%{
+        background-color: black;
+        width: 60%;
+    }
+    100%{
+        background-color: #000006;
+        width: 70%;
+    }
+} */
+.btn{
+    font-size: 25px;
+    margin: 5px 2px;
+    padding: 2px 3px;
+    border-radius: 8px;
+    background-color: rgb(184, 15, 15);
+    color: #fff;
+}
+
+#trainer{
+    /* border: 2px solid black; */
+    margin: 30px ;
+    height: 250px;
+    position:relative;
+}
+/* 
+#trainer::before{
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+} */
+.trainer_list {
+    display: flex;
+}
+.trainer_list div
+{
+    border: 2px solid black;
+    margin: 10px 10px;    
+    background-color: beige;
+    border-radius: 10px;
+}
+.trainer_list img{
+    height: 50px;
+    margin: auto;
+    display: block;
+}
+#trainer h1{
+    text-align: center;
+    font-size: 45px;
+    color: darkorchid;
+}
+.name{
+    text-align: center;
+}
+.center{
+    text-align: center;
+}
+#contact h1,div{
+    text-align: center;
+}
+#contact h1{
+    margin-top: 75px;
+    font-size: 40px;
+}
+#contact div{
+    font-size: 20px;
+    padding: 8px 8px;
+}
+
+#contact{ 
+    height: 240px; 
+    position: relative;
+    
+ }
+#contact::before{
+    content: " ";
+    position: absolute;
+    height: 230px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.webp')no-repeat center center/cover;
+    /* margin-top: 50px; */
+} 
+
+#about{
+    position: relative;
+}
+
+#about h1,div{
+    text-align: center;
+    /* position: absolute; */
+}
+#about h1{
+    font-size: 40px;
+    color: #000006;;
+}
+#about div{
+    font-size: large;
+}
+.emoji{
+    margin-top: 30px;
+    font-size: 40px;
+}
+.emoji .fa-brands {
+    padding: 10px;
+    font-size: 42px;
+  }
